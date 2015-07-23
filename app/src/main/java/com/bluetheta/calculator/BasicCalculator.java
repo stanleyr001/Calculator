@@ -1,3 +1,13 @@
+/*
+    Android calculator application
+    Property of BlueTheta Software
+
+    Written by: Jeff Booth, Stephen Leer, and Stanley Rohrbacher
+    July, 2015
+
+    Version: Pre-Alpha
+*/
+
 package com.bluetheta.calculator;
 
 import android.support.v7.app.ActionBarActivity;
