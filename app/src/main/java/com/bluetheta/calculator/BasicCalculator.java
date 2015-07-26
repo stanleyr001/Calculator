@@ -126,6 +126,11 @@ public class BasicCalculator extends ActionBarActivity {
 
     }
 
+    /**
+     * OnClickListener class that edits the display TextView when an operator Button object is
+     * clicked.
+     */
+
     private class OperatorButtonClick implements View.OnClickListener {
 
         public void onClick(View v) {
