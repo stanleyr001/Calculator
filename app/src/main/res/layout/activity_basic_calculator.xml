@@ -20,14 +20,14 @@
               tools:context=".BasicCalculator">
 
     <!-- Basic TextView which acts as the primary display of the calculator -->
-    <TextView
+    <TextView android:id="@+id/displayView"
         android:text="@string/displayTextView_cleared"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="end"
         android:layout_weight="0.35"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textSize="40sp"
+        android:textSize="65sp"
         android:textStyle="bold"
         android:padding="6dp"/>
 
