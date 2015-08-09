@@ -27,6 +27,9 @@ public class BasicCalculator extends ActionBarActivity {
     private Button[] numberButtons = new Button[10];
     private Button[] operatorButtons = new Button[10];
 
+    // Boolean object to determine if parenthesis are currently in use
+    private boolean parenthesisOpen = false;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -155,13 +158,29 @@ public class BasicCalculator extends ActionBarActivity {
                     display.setText(display.getText().toString()+ " . ");
                     break;
                 case "+/-":
-                    //TODO Add sign change operator functionality
+                    //TODO Add sign change functionality
                     break;
                 case "(  )":
-                    //TODO Add parenthesis operator functionality
+                    if(display.getText().toString().equals("0")) {
+                        display.setText("(");
+                        parenthesisOpen = true;
+                    }
+                    else if(!parenthesisOpen) {
+                        display.setText(display.getText().toString().concat("("));
+                        parenthesisOpen = true;
+                    }
+                    else {
+                        display.setText(display.getText().toString().concat(")"));
+                    }
                     break;
                 case "DEL":
-                    //TODO Add delete operator functionality
+                    StringBuilder currentDisplay = new StringBuilder(display.getText().toString());
+                    if(display.getText().toString().length() == 1)
+                        display.setText("0");
+                    else {
+                        currentDisplay.deleteCharAt(display.getText().toString().length() - 1);
+                        display.setText(currentDisplay.toString());
+                    }
                     break;
                 case "=":
                     //TODO Add equals operator functionality
