@@ -17,7 +17,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".BasicCalculator">
+    tools:context=".BasicCalculator"
+    android:weightSum="1">
 
     <!-- Basic TextView which acts as the primary display of the calculator -->
     <TextView android:id="@+id/displayView"
@@ -29,12 +30,14 @@
         android:textStyle="bold"
         android:padding="6dp"
         android:inputType="textMultiLine"
-        />
+        android:weight="1"/>
 
     <!-- TableLayout which will act as a container for number and operator buttons -->
     <TableLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:weight="0">
+
 
         <!-- TableRow to hold number buttons 7, 8, 9, and addition operator button -->
         <TableRow android:id="@+id/numPad_rowOne"
