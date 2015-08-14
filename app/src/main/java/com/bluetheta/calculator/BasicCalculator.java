@@ -181,19 +181,19 @@ public class BasicCalculator extends Activity {
 
             switch (operatorSymbol) {
                 case "+":
-                    textViewDisplay.setText(textViewDisplay.getText().toString() + " + ");
+                    textViewDisplay.setText(textViewDisplay.getText().toString() + "+");
                     break;
                 case "-":
-                    textViewDisplay.setText(textViewDisplay.getText().toString() + " - ");
+                    textViewDisplay.setText(textViewDisplay.getText().toString() + "-");
                     break;
                 case "*":
-                    textViewDisplay.setText(textViewDisplay.getText().toString() + " * ");
+                    textViewDisplay.setText(textViewDisplay.getText().toString() + "*");
                     break;
                 case "/":
-                    textViewDisplay.setText(textViewDisplay.getText().toString() + " / ");
+                    textViewDisplay.setText(textViewDisplay.getText().toString() + "/");
                     break;
                 case ".":
-                    textViewDisplay.setText(textViewDisplay.getText().toString()+ " . ");
+                    textViewDisplay.setText(textViewDisplay.getText().toString()+ ".");
                     break;
                 case "+/-":
                     //TODO Add sign change functionality
