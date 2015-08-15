@@ -32,12 +32,54 @@
         android:inputType="textMultiLine"
         android:layout_weight="1"/>
 
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000"/>
+
     <!-- TableLayout which will act as a container for number and operator buttons -->
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0">
+        android:layout_weight="0"
+        >
 
+        <!-- TableRow to hold parenthesis, clear, delete, and equals operator buttons -->
+        <TableRow android:id="@+id/numPad_rowFive"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+
+            <Button android:id="@+id/button_parenthesis"
+                    android:text="@string/button_parenthesis"
+                    android:fontFamily="thin"
+                    android:textSize="30sp"
+                    android:textColor="#000000"
+                    android:background="#00ffffff"/>
+
+            <Button android:id="@+id/button_clear"
+                    android:text="@string/button_clear"
+                    android:fontFamily="thin"
+                    android:textSize="30sp"
+                    android:textColor="#000000"
+                    android:background="#000022ff"/>
+
+            <Button android:id="@+id/button_backspace"
+                    android:text="@string/button_backspace"
+                    android:fontFamily="thin"
+                    android:textSize="30sp"
+                    android:textColor="#000000"
+                    android:background="#00ffffff"/>
+
+            <Button android:id="@+id/button_division"
+                    android:text="@string/button_division"
+                    android:fontFamily="thin"
+                    android:textSize="30sp"
+                    android:textColor="#000000"
+                    android:background="#00ffffff"/>
+
+
+        </TableRow>
 
         <!-- TableRow to hold number buttons 7, 8, 9, and addition operator button -->
         <TableRow android:id="@+id/numPad_rowOne"
@@ -48,14 +90,14 @@
                     android:text="@string/button_numberSeven"
                     android:fontFamily="thin"
                     android:textSize="30sp"
-                    android:background="#00ffffff"
+                    android:background="#000024ff"
                     android:focusableInTouchMode="false"/>
 
             <Button android:id="@+id/button_numberEight"
                     android:text="@string/button_numberEight"
                     android:fontFamily="thin"
                     android:textSize="30sp"
-                    android:background="#00ffffff"/>
+                    android:background="#00ff001c"/>
 
             <Button android:id="@+id/button_numberNine"
                     android:text="@string/button_numberNine"
@@ -63,12 +105,12 @@
                     android:textSize="30sp"
                     android:background="#00ffffff"/>
 
-            <Button android:id="@+id/button_addition"
-                    android:text="@string/button_addition"
+            <Button android:id="@+id/button_multiplication"
+                    android:text="@string/button_multiplication"
                     android:fontFamily="thin"
                     android:textSize="30sp"
                     android:textColor="#000000"
-                    android:background="#00ffffff"/>
+                    android:background="#00ff002f"/>
 
         </TableRow>
 
@@ -126,8 +168,8 @@
                     android:textSize="30sp"
                     android:background="#00ffffff"/>
 
-            <Button android:id="@+id/button_multiplication"
-                    android:text="@string/button_multiplication"
+            <Button android:id="@+id/button_addition"
+                    android:text="@string/button_addition"
                     android:fontFamily="thin"
                     android:textSize="30sp"
                     android:textColor="#000000"
@@ -156,41 +198,6 @@
                     android:text="@string/button_decimal"
                     android:fontFamily="thin"
                     android:textSize="30sp"
-                    android:background="#00ffffff"/>
-
-            <Button android:id="@+id/button_division"
-                    android:text="@string/button_division"
-                    android:fontFamily="thin"
-                    android:textSize="30sp"
-                    android:textColor="#000000"
-                    android:background="#00ffffff"/>
-
-        </TableRow>
-
-        <!-- TableRow to hold parenthesis, clear, delete, and equals operator buttons -->
-        <TableRow android:id="@+id/numPad_rowFive"
-                  android:layout_width="match_parent"
-                  android:layout_height="match_parent">
-
-            <Button android:id="@+id/button_parenthesis"
-                    android:text="@string/button_parenthesis"
-                    android:fontFamily="thin"
-                    android:textSize="30sp"
-                    android:textColor="#000000"
-                    android:background="#00ffffff"/>
-
-            <Button android:id="@+id/button_clear"
-                    android:text="@string/button_clear"
-                    android:fontFamily="thin"
-                    android:textSize="30sp"
-                    android:textColor="#000000"
-                    android:background="#00ffffff"/>
-
-            <Button android:id="@+id/button_backspace"
-                    android:text="@string/button_backspace"
-                    android:fontFamily="thin"
-                    android:textSize="30sp"
-                    android:textColor="#000000"
                     android:background="#00ffffff"/>
 
             <Button android:id="@+id/button_equals"

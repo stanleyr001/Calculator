@@ -31,8 +31,8 @@
     <!-- Strings to build operations buttons with -->
     <string name="button_addition">+</string>
     <string name="button_subtraction">-</string>
-    <string name="button_multiplication">*</string>
-    <string name="button_division">/</string>
+    <string name="button_multiplication">×</string>
+    <string name="button_division">÷</string>
     <string name="button_equals">=</string>
     <string name="button_clear">C</string>
     <string name="button_signChange">+/-</string>
